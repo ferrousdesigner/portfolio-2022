@@ -1,0 +1,100 @@
+.portfolio-container {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--black);
+  overflow: hidden;
+}
+
+.about-container {
+  width: 50vw;
+  padding: 10vh 5%;
+}
+
+.projects-container {
+  width: 50vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 50vh;
+  background-color: var(--theme-color);
+  overflow-y: auto;
+  transition: var(--trans-s);
+}
+.pc-expand {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+.pc-expand .project {
+  max-width: calc(50vw - 30rem);
+}
+.project {
+  padding: 3.5%;
+  background-color: var(--black);
+  border-radius: var(--rad);
+  margin: 2rem 3rem;
+  display: inline-block;
+  width: 100%;
+  max-width: calc(100% - 6rem);
+  transition: var(--trans-s);
+}
+.project h2 {
+  font-size: 2.4rem;
+}
+.project p {
+  font-size: 1.3rem;
+  color: var(--gray);
+  margin-bottom: 3rem;
+  font-weight: normal;
+}
+.project img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--rad);
+}
+
+.skills-container {
+  width: 50vw;
+  position: fixed;
+  top: 50vh;
+  right: 0;
+  height: 50vh;
+  overflow-y: auto;
+  background-color: var(--white);
+  overflow-y: auto;
+  transition: var(--trans-s);
+}
+.skills-expand {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+}
+.header {
+  padding: 1.5rem 3rem;
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-circle {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+  font-size: 2rem;
+  color: var(--white);
+  background-color: transparent;
+  cursor: pointer;
+}
+.header-black, .header-black .btn-circle {
+  color: var(--black);
+}
+
