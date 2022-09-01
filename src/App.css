@@ -1,12 +1,17 @@
 :root {
   font-size: 10px;
-  --theme-color: #310CC2;
   --black: #121212;
   --white: #ffffff;
   --gray: #888888;
-  --trans-s: all 0.7s ease-in-out;
-  --trans-f: all 0.4s ease-in-out;
-  --rad: 10px;
+  --trans-s: all 0.7s ease;
+  --trans-f: all 0.2s ease;
+  --rad: 0px;
+
+  --c1: #121212;
+  --c2: #fca311;
+  --c3: #97abbc;
+  --c4: #e5e5e5;
+  --c5: #14213d;
 }
 
 body {
@@ -15,14 +20,27 @@ body {
   color: var(--white);
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: bolder;
   text-transform: uppercase;
   letter-spacing: 10px;
 }
-*{
+* {
   margin: 0;
   padding: 0%;
   box-sizing: border-box;
 }
 
+button {
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
+  color: white;
+  background: var(--c5);
+  border: none;
+  border-radius: var(--rad);
+  cursor: pointer;
+}
