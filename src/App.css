@@ -5,7 +5,7 @@
   --gray: #888888;
   --trans-s: all 0.7s ease;
   --trans-f: all 0.2s ease;
-  --rad: 0px;
+  --rad: 0rem;
 
   --c1: #121212;
   --c2: #fca311;
@@ -36,8 +36,8 @@ h5 {
 }
 
 button {
-  padding: 1.5rem 3rem;
-  font-size: 1.6rem;
+  padding: 2rem 4rem;
+  font-size: 2rem;
   color: white;
   background: var(--c5);
   border: none;

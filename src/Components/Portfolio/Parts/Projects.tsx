@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import { Stack } from './Skills';
 
 interface ProjectsProps {
   projects: ProjectProps[],
@@ -8,19 +9,19 @@ interface ProjectsProps {
 interface ProjectProps {
   title: string;
   desc: string;
-  img: string;
+  link: string;
+  github: string,
+  stackList: string
 }
 
 
 export const Projects: React.FC<ProjectsProps> = ({ projects, isBlurred, onHover }: ProjectsProps): JSX.Element => {
   const [expanded, setExpanded] = useState<boolean>(false)
   const [bigHeader, setBigHeader] = useState<boolean>(true)
-  const [pause, setPause] = useState<boolean>(false)
 
   const handleScroll = (e: React.SyntheticEvent) => {
     const target = e.target as HTMLDivElement;
-    if(target?.scrollTop > 30) {
-      // console.log(target?.scrollTop)
+    if (target?.scrollTop > 30) {
       setBigHeader(false)
     } else {
       setBigHeader(true)
@@ -28,23 +29,24 @@ export const Projects: React.FC<ProjectsProps> = ({ projects, isBlurred, onHover
   }
   return (
     <div>
-      <div className={`projects-container ${expanded ? 'pc-expand' : ''} ${isBlurred ? 'blurred' : ''}`} 
+      <div className={`projects-container ${expanded ? 'pc-expand' : ''} ${isBlurred ? 'blurred' : ''}`}
         onScroll={(e) => handleScroll(e)} onMouseOver={onHover}>
         <div className={`header sticky ${!bigHeader && 'header-compact'}`}><h1>Projects</h1><button className='btn-circle' onClick={() => setExpanded(!expanded)}><span className={expanded ? 'fas fa-compress' : 'fas fa-expand'} /></button></div>
-        {projects?.map((p, key): JSX.Element => <Project {...p} key={key} />)}
+        {projects?.map((p, key): JSX.Element => <Project {...p} key={key}  />)}
       </div>
     </div>
   );
 }
 
 
-const Project: React.FC<ProjectProps> = ({ title, desc, img }: ProjectProps): JSX.Element => <div className='project'>
-  <h2>{title}</h2>
-  <p>{desc}</p>
-  <img src={img} width='100px' alt={title} />
-  <img src={img} className='img-shadow' width='100px' alt={title} />
-  <div className='actions'>
-    <a href={'https://google.com'}>View Project</a>
-    <a href={'https://google.com'}>Github </a>
+const Project: React.FC<ProjectProps> = ({ title, desc, link, github, stackList }: ProjectProps): JSX.Element => {
+  return <div className='project'>
+    <h2>{title}</h2>
+    <p>{desc}</p>
+    {stackList && <Stack stackList={stackList} />}
+    <div className='actions'>
+      <a href={link} target='_blank' rel='noopener noreferrer'>View Project</a>
+      <a href={github} target='_blank' rel='noopener noreferrer'>Github </a>
+    </div>
   </div>
-</div>
+}

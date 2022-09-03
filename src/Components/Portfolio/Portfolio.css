@@ -71,7 +71,7 @@
 }
 .project {
   padding: 4rem;
-  background-color: var(--c1);
+  background-color: var(--c5);
   border-radius: var(--rad);
   margin: 2rem 4rem;
   display: inline-block;
@@ -80,10 +80,17 @@
   transition: var(--trans-s);
   padding-bottom: 8rem;
   position: relative;
-  padding-right: 4rem;
+  padding-right: 27rem;
+  overflow: hidden;
+  transition: var(--trans-s);
 }
+
+.project iframe:hover {
+  /* transform: translateX(40.5%) translateY(-40.15%) scale(0.197); */
+}
+
 .project .actions {
-  padding: 1rem 0;
+  padding: 2rem 0rem;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -96,7 +103,7 @@
   padding: 1rem 0;
   width: 100%;
   text-transform: uppercase;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   color: var(--c3);
@@ -105,9 +112,9 @@
   text-decoration: auto;
 }
 .project h2 {
-  font-size: 2.4rem;
-    color: var(--c4);
-
+  font-size: 1.5rem;
+  color: var(--c4);
+  letter-spacing: 5px;
 }
 .project p {
   font-size: 1.3rem;
@@ -116,14 +123,36 @@
   font-weight: normal;
   margin-top: 0.5rem;
 }
-.project img {
+.project .stack-list {
   width: 30%;
   height: 100%;
-  object-fit: cover;
   border-radius: var(--rad);
+  border: none;
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 3;
+  transition: var(--trans-s);
+  padding: 3rem;
+  display: flex;
+  overflow-y: auto;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.project .stack-list img {
+  width: 30px;
+  margin-right: 0rem;
+  margin-bottom: 2rem;
+}
+.stack-label {
+  text-align: right;
+  letter-spacing: 3px;
+  margin-right: -4px;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: -2rem;
+  /* background-color: var(--c5); */
+  backdrop-filter: blur(2rem);
 }
 
 .skills-container {
@@ -137,6 +166,11 @@
   overflow-y: auto;
   transition: var(--trans-s);
   padding-top: 15vh;
+  padding-bottom: 5vh;
+  z-index: 0;
+}
+.skills-hide {
+  z-index: -1;
 }
 .skill {
   /* color: var(--black); */
@@ -163,7 +197,7 @@
   right: 0;
   z-index: 1;
 }
-.skills-expand .skill{
+.skills-expand .skill {
   width: 27%;
   margin: 0 2.5%;
 }
@@ -182,30 +216,29 @@
   font-size: 1.3rem;
   position: fixed;
   left: 50%;
-  top:0;
+  top: 0;
   width: 50%;
+  z-index: 5;
 }
 .skill-header {
   top: 50%;
   left: 50%;
-
 }
 .header-compact {
   padding: 0rem 4rem;
 }
 .header h1 {
   transition: var(--trans-s);
-
 }
-.header-compact h1  {
+.header-compact h1 {
   font-size: 1.3rem;
   letter-spacing: 0.4rem;
 }
-.pc-expand .header  {
+.pc-expand .header {
   width: 100%;
-   left: 0%;
+  left: 0%;
 }
-.skills-expand .skill-header  {
+.skills-expand .skill-header {
   width: 100%;
   left: 0%;
   top: 0;
@@ -235,4 +268,54 @@
 
 .blurred {
   /* background-color: red; */
+}
+
+@media only screen and (max-width: 766px) {
+  .project {
+    width: calc(100% - 8rem);
+  }
+  .project .actions {
+    padding-left: 4rem;
+  }
+  .btn-circle {
+    pointer-events: none;
+    opacity: 0 !important;
+  }
+  .header {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    backdrop-filter: none;
+  }
+  :root {
+    font-size: 8px;
+  }
+  .portfolio-container {
+    overflow-y: auto;
+  }
+  .about-container {
+    width: 100%;
+    padding-left: 4rem;
+    height: auto;
+  }
+  .projects-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 2rem;
+  }
+  .skills-container {
+    padding-top: 2rem;
+    width: 100%;
+    height: auto;
+    top: unset;
+
+    position: relative;
+  }
+  .skill {
+    width: 100%;
+    padding: 2rem 0rem;
+    margin: 0 calc(4rem);
+  }
 }
