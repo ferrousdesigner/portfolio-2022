@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio-2022/static/css/main.95514327.css",
+    "main.js": "/portfolio-2022/static/js/main.f6f0c33c.js",
+    "static/media/ruby.svg": "/portfolio-2022/static/media/ruby.238526268c21f85cfcac9b0bbe578e4c.svg",
+    "static/media/fblogo.svg": "/portfolio-2022/static/media/fblogo.8089e61e245f473708e3dde53ed8e562.svg",
+    "static/media/jslogo.svg": "/portfolio-2022/static/media/jslogo.8eb644621de9b53145801634a0531f91.svg",
+    "static/media/react.svg": "/portfolio-2022/static/media/react.1529f883d91d22f52e6f65aded0ca02d.svg",
+    "static/media/figma.svg": "/portfolio-2022/static/media/figma.00f242b42050744f2938f63c1329804f.svg",
+    "index.html": "/portfolio-2022/index.html",
+    "static/media/css3.svg": "/portfolio-2022/static/media/css3.fef296d3c2d65800056a832c65626f70.svg",
+    "static/media/tensorflow-2.svg": "/portfolio-2022/static/media/tensorflow-2.8b098c78272a8f9c277f7d5eff875238.svg",
+    "static/media/html5.svg": "/portfolio-2022/static/media/html5.a44583d271cae16d9cd7740ada3de342.svg",
+    "static/media/invisionlogo.svg": "/portfolio-2022/static/media/invisionlogo.ec7942f04a8cc362df58a9150099c449.svg",
+    "main.95514327.css.map": "/portfolio-2022/static/css/main.95514327.css.map",
+    "main.f6f0c33c.js.map": "/portfolio-2022/static/js/main.f6f0c33c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95514327.css",
+    "static/js/main.f6f0c33c.js"
+  ]
+}
