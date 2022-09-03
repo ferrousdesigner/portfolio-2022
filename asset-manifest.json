@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-2022/static/css/main.95514327.css",
-    "main.js": "/portfolio-2022/static/js/main.f6f0c33c.js",
+    "main.css": "/portfolio-2022/static/css/main.893a906e.css",
+    "main.js": "/portfolio-2022/static/js/main.8fdc90df.js",
     "static/media/ruby.svg": "/portfolio-2022/static/media/ruby.238526268c21f85cfcac9b0bbe578e4c.svg",
     "static/media/fblogo.svg": "/portfolio-2022/static/media/fblogo.8089e61e245f473708e3dde53ed8e562.svg",
     "static/media/jslogo.svg": "/portfolio-2022/static/media/jslogo.8eb644621de9b53145801634a0531f91.svg",
@@ -12,11 +12,11 @@
     "static/media/tensorflow-2.svg": "/portfolio-2022/static/media/tensorflow-2.8b098c78272a8f9c277f7d5eff875238.svg",
     "static/media/html5.svg": "/portfolio-2022/static/media/html5.a44583d271cae16d9cd7740ada3de342.svg",
     "static/media/invisionlogo.svg": "/portfolio-2022/static/media/invisionlogo.ec7942f04a8cc362df58a9150099c449.svg",
-    "main.95514327.css.map": "/portfolio-2022/static/css/main.95514327.css.map",
-    "main.f6f0c33c.js.map": "/portfolio-2022/static/js/main.f6f0c33c.js.map"
+    "main.893a906e.css.map": "/portfolio-2022/static/css/main.893a906e.css.map",
+    "main.8fdc90df.js.map": "/portfolio-2022/static/js/main.8fdc90df.js.map"
   },
   "entrypoints": [
-    "static/css/main.95514327.css",
-    "static/js/main.f6f0c33c.js"
+    "static/css/main.893a906e.css",
+    "static/js/main.8fdc90df.js"
   ]
 }
